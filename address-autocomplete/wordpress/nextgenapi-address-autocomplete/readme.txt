@@ -48,7 +48,7 @@ Please be aware, currently the following countries are supported.
 
  * Germany
 
-Please checkback for updates about new countris added.
+Please checkback for updates about new countries added.
 
 
 = Is this a paid plugin? =

@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name:       Address Autocomplete using NextGenAPI
- * Plugin URI:        https://nextgenapi.com/autocomplete
- * Description:       This plugin will help you to add autocomplete any German Address using NextGenAPI
+ * Plugin URI:        https://nextgenapi.com/
+ * Description:       This plugin will helps to autocomplete any German Address using NextGenAPI
  * Version:           1.0
  * Author:            NextGenAPI
  * Author URI:        https://nextgenapi.com/

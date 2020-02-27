@@ -38,7 +38,7 @@ e.g.
 
 = Should I configure all the fields ? =
 
-No, you only need to configure the fields you use.  Please check the default values used incase the field is not configured. 
+No, you only need to configure the fields you use.  Please note the following default values used incase the field is not configured. 
 
 Street ==> ''
 City ==> ''

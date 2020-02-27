@@ -41,7 +41,7 @@ function myprefix_register_theme_options_metabox() {
 
 	$cmb_options->add_field( array(
 		'name' => __( 'Street Field', 'myprefix' ),
-		'desc' => __( 'Enter of Street input field ID (with #). Example: #street_id', 'myprefix' ),
+		'desc' => __( 'Enter of Street input field ID. Example: #street_id', 'myprefix' ),
 		'id'   => 'street_field_id',
 		'type' => 'text',
 		'default' => '',
@@ -51,7 +51,7 @@ function myprefix_register_theme_options_metabox() {
 
 	$cmb_options->add_field( array(
 		'name' => __( 'PostCode Field', 'myprefix' ),
-		'desc' => __( 'Enter of Post Code field ID (with #). Example: #plz_id', 'myprefix' ),
+		'desc' => __( 'Enter of Post Code field ID. Example: #plz_id', 'myprefix' ),
 		'id'   => 'plz_field_id',
 		'type' => 'text',
 		'default' => '',
@@ -61,7 +61,7 @@ function myprefix_register_theme_options_metabox() {
 
 	$cmb_options->add_field( array(
 		'name' => __( 'City Field', 'myprefix' ),
-		'desc' => __( 'Enter of City field ID (with #). Example: #city_id', 'myprefix' ),
+		'desc' => __( 'Enter of City field ID. Example: #city_id', 'myprefix' ),
 		'id'   => 'city_field_id',
 		'type' => 'text',
 		'default' => '',
@@ -70,7 +70,7 @@ function myprefix_register_theme_options_metabox() {
 	// Country Field
 	$cmb_options->add_field( array(
 		'name' => __( 'Country Field', 'myprefix' ),
-		'desc' => __( 'Enter of Country input field ID (without #). Example: #country_id', 'myprefix' ),
+		'desc' => __( 'Enter of Country input field ID. Example: #country_id', 'myprefix' ),
 		'id'   => 'country_field_id',
 		'type' => 'text',
 		'default' => '',

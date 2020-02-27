@@ -4,7 +4,7 @@ Donate link:
 Tags: Autocomplete,NextGenAPI Address Autocomplete,Autocomplete NextGenAPI Address,Address Autocomplete
 Requires at least: 5.0
 Tested up to: 5.3
-Stable tag: trunk
+Stable tag: master
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -35,6 +35,11 @@ e.g.
 1. (Make your instructions match the desired user flow for activating and installing your plugin. Include any steps that might be needed for explanatory purposes)
 
 == Frequently Asked Questions ==
+
+= How does it work ? =
+
+NextGenAPI priovides service to query/ autocomplete street/ postal code/ city. 
+This plugin uses the servive and jquery easy autocomplete javascript to provide autocomplete features.
 
 = Should I configure all the fields ? =
 

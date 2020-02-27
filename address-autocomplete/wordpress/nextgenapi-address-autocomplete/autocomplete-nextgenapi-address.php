@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Address Autocomplete using NextGenAPI
  * Plugin URI:        https://nextgenapi.com/autocomplete
- * Description:       This plugin will help you to add autocomplete any German Address using MextGenAPI
+ * Description:       This plugin will help you to add autocomplete any German Address using NextGenAPI
  * Version:           1.0
  * Author:            NextGenAPI
  * Author URI:        https://nextgenapi.com/
@@ -30,12 +30,10 @@ define( 'AUTOCOMPLET__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 add_action( 'wp_enqueue_scripts', 'autocomplete_nextgenapi_enqueue_scripts' );
 function autocomplete_nextgenapi_enqueue_scripts() {
 	// Load the required JavaScript and CSS files
-	wp_enqueue_script('jq','https://code.jquery.com/jquery-3.3.1.min.js','','',true);
-	wp_enqueue_script('bs','https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js','','',true);
-	wp_enqueue_script('easy-custom','https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js',array('jq','bs'),'',true);
-	wp_enqueue_script('autocomplet-custom',AUTOCOMPLET__PLUGIN_URL.'js/custom.js',array('easy-custom'),'',true);
-	wp_enqueue_style('jqc','https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css','','',true);
-	wp_enqueue_style('bsc','https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css','','',true);
+	wp_enqueue_style('autocomplete-css','css/autocomplete.css','','',true);
+	wp_enqueue_script('autocomplete',AUTOCOMPLET__PLUGIN_URL.'js/autocomplete.js',array('jquery'),'',true);
+	wp_enqueue_script('autocomplete-custom',AUTOCOMPLET__PLUGIN_URL.'js/custom.js',array('autocomplete'),'',true);
+	
 }
 
 // Putting on wp head

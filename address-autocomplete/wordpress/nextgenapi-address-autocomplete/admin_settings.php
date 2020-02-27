@@ -1,6 +1,6 @@
 <?php
 //including meta box
-include('metabox/init.php');
+include('cmb2/init.php');
 
 
 add_action( 'cmb2_admin_init', 'myprefix_register_theme_options_metabox' );

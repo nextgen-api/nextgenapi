@@ -71,7 +71,7 @@ var streetoptions = {
 			callback: function() {}
 		},
 		onClickEvent: function() {
-			var sel = jQuery('#search-form-2').getSelectedItemData();
+			var sel = jQuery(street_field_id).getSelectedItemData();
 
 			jQuery(street_field_id).val(sel.street).trigger("change");
 			jQuery(plz_field_id).val(sel.plz).trigger("change");

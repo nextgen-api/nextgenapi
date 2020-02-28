@@ -30,7 +30,7 @@ define( 'AUTOCOMPLET__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 add_action( 'wp_enqueue_scripts', 'autocomplete_nextgenapi_enqueue_scripts' );
 function autocomplete_nextgenapi_enqueue_scripts() {
 	// Load the required JavaScript and CSS files
-	wp_enqueue_style('autocomplete-css','css/autocomplete.css','','',true);
+	wp_enqueue_style('autocomplete-css',AUTOCOMPLET__PLUGIN_URL.'css/autocomplete.css');
 	wp_enqueue_script('autocomplete',AUTOCOMPLET__PLUGIN_URL.'js/autocomplete.js',array('jquery'),'',true);
 	wp_enqueue_script('autocomplete-custom',AUTOCOMPLET__PLUGIN_URL.'js/custom.js',array('autocomplete'),'',true);
 	

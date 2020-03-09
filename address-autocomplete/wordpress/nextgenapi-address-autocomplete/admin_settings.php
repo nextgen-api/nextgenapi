@@ -13,7 +13,7 @@ function myprefix_register_theme_options_metabox() {
 	 */
 	$cmb_options = new_cmb2_box( array(
 		'id'           => 'myprefix_option_metabox',
-		'title'        => esc_html__( 'NextGenAPI Autocomplete', 'myprefix' ),
+		'title'        => esc_html__( 'Address Autocomplete', 'myprefix' ),
 		'object_types' => array( 'options-page' ),
 		/*
 		 * The following parameters are specific to the options-page box
@@ -36,7 +36,21 @@ function myprefix_register_theme_options_metabox() {
 	 * Prefix is not needed.
 	 */
 
-	
+	$cmb_options->add_field( array(
+		'name' => 'NextGenAPI Address Autocomplete',
+		'desc' => 'This plugin autocompletes any German Address using NextGenAPI. You can autocomplete Street Name, Postal Code or City. The plugin makes a REST call against NextGenAPI. <br />
+		<ul>
+		<li>If no addresses are returned, queried address did not match any address. </li>
+		<li>If one address is returned, the queried address matched exactly. </li>
+		<li>If there are more addresses matching, a maximum of 5 addresses would be returned. </li>
+		</ul>
+		It is not required to fill all IDs. If any field ID is not filled, a default value of the filed is used to query the address. Default values for Street, Postal Code is *, default value for Country is DE. <br><br>
+		Check https://nextgenapi.com for more information.',
+		'type' => 'title',
+		'id'   => 'wiki_test_title'
+	) );
+
+
 	// Street Field
 
 	$cmb_options->add_field( array(

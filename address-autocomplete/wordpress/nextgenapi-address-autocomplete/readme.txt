@@ -10,7 +10,7 @@ Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin helps to Autocomplete an address in Germany.
+This plugin helps to Autocomplete any Germany Address using NextGenAPI.
 
 == Description ==
 

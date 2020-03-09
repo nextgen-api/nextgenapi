@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Address Autocomplete using NextGenAPI
  * Plugin URI:        https://nextgenapi.com/
- * Description:       This plugin will helps to autocomplete any German Address using NextGenAPI
+ * Description:       This plugin autocompletes any German Address using NextGenAPI. You can autocomplete Street Name, Postal Code or City. The plugin makes a REST call against NextGenAPI. If no addresses are returned, queried address did not match any address. If one address is returned, the queried address matched exactly. If there are more addresses matching, a maximum of 5 addresses would be returned.
  * Version:           1.0
  * Author:            NextGenAPI
  * Author URI:        https://nextgenapi.com/
@@ -11,10 +11,6 @@
  * Text Domain:       ga-auto
  * Domain Path:       /languages
  */
-
-/*
-
-*/
 
 // Make sure we don't expose any info if called directly
 if ( !function_exists( 'add_action' ) ) {

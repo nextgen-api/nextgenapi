@@ -39,11 +39,11 @@ function autocomplete_set_nextgenapi_autocomplete(){
 	$search_fields = array();
 	$gaaf_names = get_option('gaaf_field_name');
 
-	$url = myprefix_get_option( 'url' );
-	$street_field_id = myprefix_get_option( 'street_field_id' );
-	$plz_field_id = myprefix_get_option( 'plz_field_id' );
-	$city_field_id = myprefix_get_option( 'city_field_id' );
-	$country_ifield_d = myprefix_get_option( 'country_field_id' );
+	$url = nextgenapi_get_option( 'url' );
+	$street_field_id = nextgenapi_get_option( 'street_field_id' );
+	$plz_field_id = nextgenapi_get_option( 'plz_field_id' );
+	$city_field_id = nextgenapi_get_option( 'city_field_id' );
+	$country_ifield_d = nextgenapi_get_option( 'country_field_id' );
 
 	
 ?>
